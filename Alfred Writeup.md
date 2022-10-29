@@ -6,8 +6,8 @@ Since beginning to prepare for the OSCP I have periodically bounced back and for
 
 Since THM provide us with the knowledge of this being a Windows device running Jenkins, this gives us an advantage when it comes to enumeration. This knowledge narrows down the first wave of enumeration we will have to perform with the first being an nmap scan to determine the ports and services running.
 
-This can be achieved by running the comman ```sudo nmap 10.10.69.30 -Pn -p 1-9999```  which gives us three live ports which are:  80/TCP HTTP, 3389/TCP MS-WBT-SERVER, 8080/TCP HTTP-PROXY ![Pasted image 20221028174616.png](images/Pasted image 20221028174616.png)
-Now that we have this information lets visit the open http ports to see what is available to us starting with 10.10.69.30:80 which just gives us a page with an image of Bruce Wayne ![Pasted image 20221028175000.png](images/Pasted image 20221028175000.png) We will now visit 10.10.69.30:8080 where we are presented with a Jenkins login page ![Pasted image 20221028175054.png](images/Pasted image 20221028175054.png) 
+This can be achieved by running the comman ```sudo nmap 10.10.69.30 -Pn -p 1-9999```  which gives us three live ports which are:  80/TCP HTTP, 3389/TCP MS-WBT-SERVER, 8080/TCP HTTP-PROXY ![Burp Proxy](https://github.com/J0hnStr0ng/THM-Alfred-Writeup/blob/main/images/Pasted%20image%2020221028181138.png)
+Now that we have this information lets visit the open http ports to see what is available to us starting with 10.10.69.30:80 which just gives us a page with an image of Bruce Wayne ![Hydra Initialization](https://github.com/J0hnStr0ng/THM-Alfred-Writeup/blob/main/images/Pasted%20image%2020221028183503.png) We will now visit 10.10.69.30:8080 where we are presented with a Jenkins login page ![Hydra Success](https://github.com/J0hnStr0ng/THM-Alfred-Writeup/blob/main/images/Pasted%20image%2020221028190601.png) 
 
 ## Initial Access ##
 
