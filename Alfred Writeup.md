@@ -36,7 +36,7 @@ By utilizing Hydra we see a successful login with the username admin and the pas
 Now that we have this login information we need to log in and be greeted with the Jenkins GUI where we see an existing project as well as the admin username showing the account we logged in under. 
 ![Jenkins Access](https://github.com/J0hnStr0ng/THM-Alfred-Writeup/blob/main/images/Pasted%20image%2020221028190845.png)
 
-We can see that the version is Jenkins 2.190.1 so we need to reseach the functionality of Jenkins to begin getting an idea of what it does which allows us to find ways to exploit it. Once you know the functionality of the service you can then move on to using the tool that THM recommends which is Nishang, specifically the Invoke-PowerShellTcp.ps1 script inside the Nishang package.
+We can see that the version is Jenkins 2.190.1 so we need to reseach the functionality of Jenkins to begin getting an idea of what it does which allows us to find ways to exploit it. This should have pointed you toward Jenkins being an automation platform that facilitates Continuous Integration (CI) and in theory will have jobs that are either manually triggered or automatically triggered to execute some function. Once you know this you can then move on to using the tool that THM recommends which is Nishang, specifically the Invoke-PowerShellTcp.ps1 script inside the Nishang package.
 
 Jenkins allows us to execute Windows batch commands on the host running the service which will allow us to pull down the PowerShell script from our machine into the Windows device where it will be executed. Upon execution our listener should pick up giving us a reverse shell. 
 
