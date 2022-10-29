@@ -4,9 +4,9 @@ Since beginning to prepare for the OSCP I have periodically bounced back and for
 
 ## Enumeration Phase ##
 
-Since THM provide us with the knowledge of this being a Windows device running Jenkins, this gives us an advantage when it comes to enumeration. This knowledge narrows down the first wave of enumeration we will have to perform with the first being an nmap scan to determine the ports and services running.
+Since TryHackMe (THM) provide us with the knowledge of this being a Windows device running Jenkins, this gives us an advantage when it comes to enumeration. This knowledge narrows down the first wave of enumeration we will have to perform with the first being an nmap scan to determine the ports and services running.
 
-This can be achieved by running the comman ```sudo nmap 10.10.69.30 -Pn -p 1-9999```  which gives us three live ports which are:
+This can be achieved by running the command ```sudo nmap 10.10.69.30 -Pn -p 1-9999```  which gives us three live ports which are:
 | Port | Protocol | Service |
 |-----:|----------|---------|
 |    80|       TCP|     HTTP|
