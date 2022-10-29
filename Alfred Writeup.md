@@ -12,7 +12,7 @@ This can be achieved by running the comman ```sudo nmap 10.10.69.30 -Pn -p 1-999
 |    80|       TCP|     HTTP|
 |  3389|       TCP| MS-WBT-Server|
 |  8080|       TCP|   HTTP-PROXY|
-80/TCP HTTP, 3389/TCP MS-WBT-SERVER, 8080/TCP HTTP-PROXY 
+ 
 ![NMAP Enumeration](https://github.com/J0hnStr0ng/THM-Alfred-Writeup/blob/main/images/Pasted%20image%2020221028174616.png)
 
 Now that we have this information lets visit the open http ports to see what is available to us starting with 10.10.69.30:80 which just gives us a page with an image of Bruce Wayne 
