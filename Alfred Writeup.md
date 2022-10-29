@@ -15,7 +15,8 @@ This can be achieved by running the comman ```sudo nmap 10.10.69.30 -Pn -p 1-999
  
 ![NMAP Enumeration](https://github.com/J0hnStr0ng/THM-Alfred-Writeup/blob/main/images/Pasted%20image%2020221028174616.png)
 
-Now that we have this information lets visit the open http ports to see what is available to us starting with 10.10.69.30:80 which just gives us a page with an image of Bruce Wayne 
+Now that we have this information lets visit the open http ports to see what is available to us starting with 10.10.69.30:80 which just gives us a page with an image of Bruce Wayne.
+
 ![Port 80 Access](https://github.com/J0hnStr0ng/THM-Alfred-Writeup/blob/main/images/Pasted%20image%2020221028175000.png) 
 
 We will now visit 10.10.69.30:8080 where we are presented with a Jenkins login page. 
